@@ -1,0 +1,17 @@
+{
+  "name": "text-editor",
+  "version": "1.0.0",
+  "description": "The **PWA Text Editor** is a single-page application that allows developers to create notes or code snippets with or without an internet connection. This project demonstrates key concepts of Progressive Web Applications (PWA) including offline functionality, IndexedDB for data persistence, and service workers for caching.",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.4"
+  }
+}
